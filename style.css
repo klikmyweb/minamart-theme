@@ -1,0 +1,22 @@
+/*
+Theme Name: Minamart Theme
+Theme URI: https://minamart.id
+Author: Minamart Team
+Author URI: https://minamart.id
+Description: A premium, native WordPress WooCommerce theme for fresh fish and seafood e-commerce.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: minamart
+Domain Path: /languages
+Requires at least: 6.0
+Requires PHP: 8.0
+WooCommerce tested up to: 7.0
+*/
+
+/* ==========================================================================
+   MINAMART THEME STYLESHEET
+   Production-Ready Native WordPress WooCommerce Theme
+   ========================================================================== */
+
+/* CSS is loaded via enqueue in functions.php */

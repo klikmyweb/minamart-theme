@@ -1,0 +1,16 @@
+<?php
+/**
+ * Minamart Theme - WooCommerce Cart Template Directory
+ *
+ * @package Minamart
+ * @since 1.0.0
+ *
+ * This directory is prepared for future WooCommerce cart template overrides.
+ * Currently using WooCommerce default cart templates.
+ *
+ * Future templates to add here:
+ * - cart.php
+ * - cart-empty.php
+ * - mini-cart.php
+ * - cart-item.php
+ */

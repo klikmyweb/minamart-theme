@@ -1,0 +1,17 @@
+<?php
+/**
+ * Minamart Theme - WooCommerce Checkout Template Directory
+ *
+ * @package Minamart
+ * @since 1.0.0
+ *
+ * This directory is prepared for future WooCommerce checkout template overrides.
+ * Currently using WooCommerce default checkout templates.
+ *
+ * Future templates to add here:
+ * - checkout.php
+ * - form-checkout.php
+ * - form-coupon.php
+ * - payment.php
+ * - order-review.php
+ */

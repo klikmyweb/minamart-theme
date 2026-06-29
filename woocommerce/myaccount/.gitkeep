@@ -1,0 +1,17 @@
+<?php
+/**
+ * Minamart Theme - WooCommerce My Account Template Directory
+ *
+ * @package Minamart
+ * @since 1.0.0
+ *
+ * This directory is prepared for future WooCommerce my account template overrides.
+ * Currently using WooCommerce default my account templates.
+ *
+ * Future templates to add here:
+ * - my-account.php
+ * - form-login.php
+ * - form-edit-account.php
+ * - orders.php
+ * - view-order.php
+ */

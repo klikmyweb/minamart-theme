@@ -1,0 +1,20 @@
+<?php
+/**
+ * Minamart Theme - WooCommerce Loop Template Directory
+ *
+ * @package Minamart
+ * @since 1.0.0
+ *
+ * This directory is prepared for future WooCommerce loop template customizations.
+ * Currently using WooCommerce default loop templates.
+ *
+ * Future templates to add here:
+ * - loop-start.php
+ * - loop-end.php
+ * - add-to-cart.php
+ * - rating.php
+ * - price.php
+ * - sale-flash.php
+ * - title.php
+ * - thumbnail.php
+ */

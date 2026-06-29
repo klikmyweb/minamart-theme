@@ -1,0 +1,196 @@
+/* ==========================================================================
+   MINAMART THEME - PRODUCT STYLES
+   Product cards and product display components
+   ========================================================================== */
+
+@import url('./variables.css');
+
+/* ===== PRODUCTS GRID ===== */
+
+.products-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: var(--spacing-lg);
+}
+
+.products-grid[data-columns="2"] {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.products-grid[data-columns="3"] {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.products-grid[data-columns="4"] {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* ===== PRODUCT CARD ===== */
+
+.product-card {
+	background-color: var(--color-background-light);
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	transition: all var(--transition-base);
+	box-shadow: var(--shadow-soft);
+}
+
+.product-card:hover {
+	box-shadow: var(--shadow-medium);
+	transform: translateY(-4px);
+}
+
+/* ===== PRODUCT IMAGE ===== */
+
+.product-image-wrapper {
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 1;
+	background-color: var(--color-background);
+}
+
+.product-image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform var(--transition-base);
+}
+
+.product-card:hover .product-image-wrapper img {
+	transform: scale(1.05);
+}
+
+/* ===== PRODUCT BADGE ===== */
+
+.product-badge {
+	position: absolute;
+	top: var(--spacing-lg);
+	right: var(--spacing-lg);
+	padding: var(--spacing-sm) var(--spacing-md);
+	background-color: var(--color-secondary);
+	color: #ffffff;
+	font-size: var(--font-size-xs);
+	font-weight: var(--font-weight-bold);
+	border-radius: var(--radius-sm);
+	text-transform: uppercase;
+}
+
+.sale-badge {
+	background-color: var(--color-warning);
+}
+
+/* ===== PRODUCT INFO ===== */
+
+.product-info {
+	padding: var(--spacing-lg);
+}
+
+.product-title {
+	margin: 0 0 var(--spacing-md) 0;
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-semibold);
+	line-height: var(--line-height-normal);
+}
+
+.product-title a {
+	color: var(--color-text-dark);
+	transition: color var(--transition-base);
+}
+
+.product-title a:hover {
+	color: var(--color-primary);
+}
+
+/* ===== PRODUCT RATING ===== */
+
+.product-rating {
+	margin-bottom: var(--spacing-md);
+}
+
+.product-rating .star {
+	color: #FFC107;
+}
+
+/* ===== PRODUCT PRICE ===== */
+
+.product-price {
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-primary);
+	margin-bottom: var(--spacing-lg);
+}
+
+.product-price del {
+	color: var(--color-text-light);
+	text-decoration: line-through;
+	margin-right: var(--spacing-sm);
+}
+
+/* ===== PRODUCT ACTIONS ===== */
+
+.product-actions {
+	display: flex;
+	gap: var(--spacing-md);
+}
+
+.btn-add-cart,
+.btn-view {
+	flex: 1;
+	padding: var(--spacing-md) var(--spacing-lg);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-semibold);
+	border-radius: var(--radius-md);
+	cursor: pointer;
+	transition: all var(--transition-base);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-add-cart {
+	background-color: var(--color-secondary);
+	color: #ffffff;
+	border: none;
+}
+
+.btn-add-cart:hover {
+	background-color: var(--color-secondary-dark);
+}
+
+.btn-view {
+	background-color: var(--color-primary);
+	color: #ffffff;
+	border: none;
+}
+
+.btn-view:hover {
+	background-color: var(--color-primary-dark);
+}
+
+/* ===== FEATURED PRODUCTS SECTION ===== */
+
+.featured-products-section,
+.best-seller-products-section,
+.sale-products-section {
+	padding: var(--spacing-massive) var(--container-padding);
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: var(--spacing-massive);
+}
+
+.section-title {
+	font-size: var(--font-size-xxl);
+	font-weight: var(--font-weight-bold);
+	margin: 0;
+	color: var(--color-primary);
+}
+
+.featured-products-grid,
+.best-seller-products-grid,
+.sale-products-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: var(--spacing-lg);
+}

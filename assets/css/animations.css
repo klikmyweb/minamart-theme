@@ -1,0 +1,186 @@
+/* ==========================================================================
+   MINAMART THEME - ANIMATIONS
+   Smooth transitions and animation effects
+   ========================================================================== */
+
+@import url('./variables.css');
+
+/* ===== FADE IN ANIMATION ===== */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn var(--animation-duration-medium) ease-in-out forwards;
+}
+
+/* ===== SLIDE UP ANIMATION ===== */
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.slide-up {
+	animation: slideUp var(--animation-duration-medium) ease-out forwards;
+}
+
+/* ===== SLIDE DOWN ANIMATION ===== */
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.slide-down {
+	animation: slideDown var(--animation-duration-medium) ease-out forwards;
+}
+
+/* ===== SLIDE LEFT ANIMATION ===== */
+
+@keyframes slideLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.slide-left {
+	animation: slideLeft var(--animation-duration-medium) ease-out forwards;
+}
+
+/* ===== SLIDE RIGHT ANIMATION ===== */
+
+@keyframes slideRight {
+	from {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.slide-right {
+	animation: slideRight var(--animation-duration-medium) ease-out forwards;
+}
+
+/* ===== ZOOM IN ANIMATION ===== */
+
+@keyframes zoomIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.zoom-in {
+	animation: zoomIn var(--animation-duration-medium) ease-out forwards;
+}
+
+/* ===== PULSE ANIMATION ===== */
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.7;
+	}
+}
+
+.pulse {
+	animation: pulse var(--animation-duration-short) ease-in-out infinite;
+}
+
+/* ===== BOUNCE ANIMATION ===== */
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+.bounce {
+	animation: bounce var(--animation-duration-medium) ease-in-out infinite;
+}
+
+/* ===== SPIN ANIMATION ===== */
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spin {
+	animation: spin var(--animation-duration-long) linear infinite;
+}
+
+/* ===== SCALE UP ANIMATION ===== */
+
+@keyframes scaleUp {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
+	}
+}
+
+.scale-up:hover {
+	animation: scaleUp var(--transition-base) ease-out forwards;
+}
+
+/* ===== SMOOTH TRANSITIONS ===== */
+
+.transition-all {
+	transition: all var(--transition-base);
+}
+
+.transition-colors {
+	transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}
+
+.transition-transform {
+	transition: transform var(--transition-base);
+}
+
+.transition-opacity {
+	transition: opacity var(--transition-base);
+}

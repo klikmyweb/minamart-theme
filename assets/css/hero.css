@@ -1,0 +1,88 @@
+/* ==========================================================================
+   MINAMART THEME - HERO BANNER STYLES
+   Hero section and banner component styles
+   ========================================================================== */
+
+@import url('./variables.css');
+
+/* ===== HERO SECTION ===== */
+
+.hero-banner {
+	padding: var(--spacing-massive) var(--container-padding);
+	background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+	color: #ffffff;
+}
+
+.hero-container {
+	max-width: var(--container-width);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-massive);
+	align-items: center;
+}
+
+/* ===== HERO CONTENT ===== */
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xl);
+}
+
+.hero-title {
+	font-size: var(--font-size-huge);
+	font-weight: var(--font-weight-bold);
+	line-height: var(--line-height-tight);
+	margin: 0;
+	color: #ffffff;
+}
+
+.hero-subtitle {
+	font-size: var(--font-size-lg);
+	line-height: var(--line-height-relaxed);
+	margin: 0;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-content .btn {
+	max-width: fit-content;
+	padding: var(--spacing-lg) var(--spacing-massive);
+	font-size: var(--font-size-md);
+}
+
+/* ===== HERO IMAGE ===== */
+
+.hero-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ===== HERO TRUST BADGES ===== */
+
+.hero-badges {
+	display: flex;
+	gap: var(--spacing-lg);
+	flex-wrap: wrap;
+	margin-top: var(--spacing-xl);
+}
+
+.hero-badge {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-md);
+	padding: var(--spacing-md) var(--spacing-lg);
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: var(--radius-lg);
+	font-size: var(--font-size-sm);
+}
+
+.hero-badge-icon {
+	font-size: var(--font-size-lg);
+}

@@ -1,0 +1,13 @@
+<?php
+/**
+ * Minamart Theme - Language File Initialization
+ *
+ * @package Minamart
+ * @since 1.0.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+// Language file stub for translations
